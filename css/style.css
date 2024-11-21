@@ -241,7 +241,8 @@ body {
 } */
 
 .audio__inner {
-  min-height: 220vh;
+  /* min-height: 220vh; */
+  min-height: 232vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -250,7 +251,7 @@ body {
 .audio__box {
   color: #fff;
   text-align: center;
-  padding-bottom: 45vh;
+  padding-bottom: 58vh;
   /* padding-bottom: 30vh; */
 }
 
