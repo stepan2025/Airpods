@@ -251,7 +251,7 @@ body {
 .audio__box {
   color: #fff;
   text-align: center;
-  padding-bottom: 58vh;
+  padding-bottom: 57.5vh;
   /* padding-bottom: 30vh; */
 }
 
@@ -290,5 +290,76 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
+
+@media (max-width: 1200px) {
+  .choose-color__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .choose-color {
+    padding-bottom: 60px;
+  }
+  .main__title {
+    font-size: 36px;
+  }
+  .composition {
+    margin-bottom: 60px;
+  }
+  .case {
+    padding: 60px 0;
+  }
+  .energy__title {
+    padding-top: 60px;
+    margin-bottom: 20px;
+  }
+  .energy__num {
+    font-size: 110px;
+    margin-bottom: 20px;
+  }
+  .choose-color__list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .choose-color__text {
+    margin-bottom: 40px;
+  }
+  .choose-color {
+    padding-bottom: 40px;
+  }
+  .case {
+    padding: 40px 0;
+  }
+  .composition__inner-text p {
+    width: 100%;
+  }
+  .composition__inner {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+/* @media (min-width: 1531px) {
+  .title--ax {
+    transform: translate(-156px, 421px);
+  }
+  .audio__box {
+    padding-bottom: 54vh;
+  }
+  .audio__inner {
+    min-height: 220vh;
+  }
+  .audio__text {
+    max-width: 300px;
+    margin-bottom: 13px;
+    font-size: 16px;
+  }
+} */
