@@ -44,6 +44,12 @@ body {
   margin-bottom: 20px;
 }
 
+.logo-header {
+  width: 25px;
+  height: 30px;
+  max-width: none;
+}
+
 .content-item {
   display: none;
 }
