@@ -44,6 +44,14 @@ body {
   margin-bottom: 20px;
 }
 
+.content-item {
+  display: none;
+}
+
+.content-item.content-item__active {
+  display: inline-block;
+}
+
 .header {
   min-height: 100vh;
   position: relative;
@@ -87,6 +95,26 @@ body {
   width: 100%;
   background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
   z-index: -2;
+}
+
+.header__content-images:has(.color--blue.content-item__active)::before {
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header__content-images:has(.color--pink.content-item__active)::before {
+  background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header__content-images:has(.color--green.content-item__active)::before {
+  background: linear-gradient(180deg, #ddead9 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header__content-images:has(.color--white.content-item__active)::before {
+  background: linear-gradient(180deg, #fafafa 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header__content-images:has(.color--black.content-item__active)::before {
+  background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0) 100%);
 }
 
 .title {
@@ -145,6 +173,10 @@ body {
   border: 1px solid #777;
   border-radius: 20px;
   padding: 50px 55px;
+}
+
+.choose__color-btn--active {
+  display: none;
 }
 
 .composition {
@@ -259,9 +291,15 @@ body {
   flex-wrap: wrap;
 }
 
-@media (min-width: 1531px) {
+@media (min-width: 1537px) {
   .title--ax {
     transform: translate(-156px, 421px);
+  }
+}
+
+@media (max-width: 1530px) {
+  .title--ax {
+    transform: translate(896px, 162px);
   }
   .header__content-images img {
     max-width: 100%;
@@ -342,6 +380,9 @@ body {
     font-size: 58px;
     left: 0;
   }
+  .header__top {
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 560px) {
@@ -378,15 +419,17 @@ body {
   }
   .header__top {
     align-items: flex-start;
+    padding: 40px 0;
   }
   .title {
     left: 4px;
+    font-size: 55px;
   }
 }
 
 @media (max-width: 476px) {
   .title {
-    font-size: 50px;
+    font-size: 47px;
     left: 4px;
   }
   .choose-color {
@@ -397,7 +440,7 @@ body {
 @media (max-width: 428px) {
   .main__title,
   .choose-color__title {
-    font-size: 28px;
+    font-size: 26px;
   }
   .energy__num {
     font-size: 92px;
@@ -406,8 +449,14 @@ body {
     max-width: 100%;
   }
   .title {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title--m {
+    padding-left: 101px;
   }
 }
